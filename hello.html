@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head lang="en">
+	<meta charset = "UTF-8">
+	<link type = "text/css" rel="stylesheet" href="stylesheet.css"/>
+	<script src="echarts.simple.js"> </script>
+	<title>Internet Care</title>
+</head>
+
+<body>
+   <header>
+	<h1><img src="pic_2.jpg" alt="home_hospital" width =100px height = 100px style = "padding:20px; vertical-align:middle; "/>
+	<strong>欢迎来到家庭医疗监控中心</strong></h1>
+   </header>	
+
+   <div id = "wrapper">
+	<div id = "info">
+	    <h2>个人信息</h2>
+	    <ul>
+		<li>姓名</li>
+		<li>性别</li>
+		<li>年龄</li>
+		<li>病史</li>
+	    </ul>
+	</div>
+	
+	<div id = "content">
+		<div id = "old_data">
+			<h2>最新数据</h2>
+			<div id = "heartbeat">
+				<h3><img src = "heartbeat.jpg" width =80px height = 80px style = "vertical-align:middle; "/>
+				心率：100次/秒</h3>
+			</div>
+			<div id = "bloodpressure">
+				<h3><img src = "heartbeat.jpg" width =80px height = 80px style = "vertical-align:middle; "/>
+				血压：105/69mmhg</h3>
+			</div>	
+			<div id = "temperature">
+				<h3><img src = "heartbeat.jpg" width =80px height = 80px style = "vertical-align:middle; "/>
+				体温：38 &deg C</h3>
+			</div>
+		</div>
+	
+		
+			
+		<div id = "new_data">
+		<h2>历史数据</h2>
+		<div id = "graph_1">
+			<h3>心率</h3>
+		 	<div id="heartbeat_1" style="width: 800px;height:400px;padding-left:10px;">
+			
+				<script type="text/javascript">
+			
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('heartbeat_1'));
+
+				// 指定图表的配置项和数据
+				var option = {
+				    title: {
+					text: "心率"
+				    },
+				    tooltip: {},
+				    legend: {
+					data:['心率']
+				    },
+				    xAxis: {
+					data: ["1","2","3","4","5","6","7"]
+				    },
+				    yAxis: {},
+				    series: [{
+					name: '心率',
+					type: 'bar',
+					data: [5, 20, 36, 10, 10, 20,10]
+				    }]
+				};
+
+				// 使用刚指定的配置项和数据显示图表。
+				myChart.setOption(option);
+				</script>
+			
+			</div>
+		</div>
+	
+		<div id = "graph_2">
+		<h3>血压</h3>
+		<div id="bloodpressure_1" style="width: 800px;height:400px;padding-left:10px;paddint-top:10px"></div>
+
+			<script type="text/javascript">
+	
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('bloodpressure_1'));
+
+			// 指定图表的配置项和数据
+			var option = {
+			    title: {
+				text: '心率'
+			    },
+			    tooltip: {},
+			    legend: {
+				data:['心率']
+			    },
+			    xAxis: {
+				data: ["1","2","3","4","5","6","7"]
+			    },
+			    yAxis: {},
+			    series: [{
+				name: '血压1',
+				type: 'line',
+				data: [105, 100, 120, 120, 130, 110,120]
+			    },
+				{
+				name: '血压2',
+				type: 'line',
+				data: [60, 65, 70, 80, 67, 72,76]
+				}]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+			</script>
+		</div>
+
+		<div id = "graph_3" style = "padding-left:20px;">
+		<h3>体温</h3>
+		<div id="temparature_1" style="width: 800px;height:400px;"><h3>体温</h3></div>
+			<script type="text/javascript">
+	
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('temparature_1'));
+
+			// 指定图表的配置项和数据
+			var option = {
+			    title: {
+				text: '心率'
+			    },
+			    tooltip: {},
+			    legend: {
+				data:['心率']
+			    },
+			    xAxis: {
+				data: ["1","2","3","4","5","6","7"]
+			    },
+			    yAxis: {},
+			    series: [{
+				name: '心率',
+				type: 'line',
+				data: [37.8, 38.9, 36, 37.2, 37.5, 36.9,38]
+			    }]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+			</script>
+		</div>
+		</div>
+		</div>
+		
+	</div> 
+			
+   </div>
+  
+	
+	   <footer> Thank you.Have a happy day!</footer>
+   </div>
+</body>

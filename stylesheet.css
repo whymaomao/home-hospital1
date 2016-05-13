@@ -1,0 +1,125 @@
+body{
+	margin:0;
+	padding:0;
+	
+}
+
+header{
+	float:left;
+	width:100%;
+	text-align:center;
+	background-color:#f4ebc3;
+}
+
+
+footer{
+	position:relative;
+	float:left;
+	width:100%;
+	background-color:#cccccc;
+	text-align:center;
+	font-style:italic;
+}
+
+#wrapper
+{
+	overflow:hidden;
+	float:left;
+	width:100%;
+}
+
+#info
+{
+	float:left;
+	width:20%;
+	background-color:#b9d7d9;
+	height:2000px;
+
+}
+
+#info ul
+{
+	list-style:none;
+	margin:12px 0px 0px 12px;
+	padding:2px;
+}
+
+#info li
+{
+	font-size:12pt;
+	font-weight:bold;
+	padding:3px 0px 3px 3px;
+	color:#000000;
+	display:block;
+
+}
+
+#content
+{
+	
+	float:right;
+	width:80%;
+	height:2000px;
+
+
+}
+#old_data
+{
+	float:left;
+	display:block;
+	width:100%;
+	background-color:#ffcccc
+}
+
+#new_data
+{
+	float:left;
+	display:block;
+	width:100%;
+	background-color:#ffffcc;
+}
+#heartbeat
+{
+	float:left;
+
+}
+#bloodpressure
+{
+	float:left;
+
+}
+#temperature
+{
+	float:left;
+
+}
+#haha
+{
+	float:left;
+}
+#graph_1
+{
+	float:left;
+	
+}
+
+#graph_2
+{
+	float:left;
+	
+}
+
+#graph_3
+{
+	float:left;
+	
+}
+h1{
+	margin:0;
+}
+
+div
+{
+	float:left;
+}
+
